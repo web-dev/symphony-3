@@ -653,7 +653,7 @@
 					$c = Datasource::resolveParameter($condition['parameter'], $ParameterOutput);
 
 					// Is Empty
-					if($condition['logic'] == 'empty' && (is_null($c) || strlen($c) == 0)){
+					if($condition['logic'] == 'empty' && (is_null($c) || empty($c))){
 						$execute = false;
 					}
 
